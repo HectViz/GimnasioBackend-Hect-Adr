@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Clientes - GymApp</title>
+  <title>Membresías - GymApp</title>
 </head>
 <body>
-  <h1>Listado de Clientes</h1>
+  <h1>Listado de Membresías</h1>
   <ul>
-    <% clientes.forEach(cliente => { %>
+    <% membresias.forEach(membresia => { %>
       <li>
-        <strong><%= cliente.nombre %></strong><br>
-        Email: <%= cliente.email %><br>
-        Teléfono: <%= cliente.telefono %><br>
-        <a href="/clientes/<%= cliente.id %>">Ver Detalles</a>
+        <strong>Membresía #<%= membresia.id %></strong><br>
+        Cliente ID: <%= membresia.clienteId %><br>
+        Tipo: <%= membresia.tipo %><br>
+        Inicio: <%= membresia.fechaInicio %><br>
+        Vencimiento: <%= membresia.fechaVencimiento %>
       </li>
       <hr>
     <% }) %>
