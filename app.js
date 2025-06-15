@@ -24,6 +24,8 @@ const clientesRouter = require('./routes/clientes');
 app.use('/clientes', clientesRouter);
 const membresiasRouter = require('./routes/membresias');
 app.use('/membresias', membresiasRouter);
+const pagosRouter = require('./routes/pagos');
+app.use('/pagos', pagosRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
